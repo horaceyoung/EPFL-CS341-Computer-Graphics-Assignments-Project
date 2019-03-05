@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\debug_aabb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Cylinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Plane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\vec3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Cylinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Plane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Ray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\SolveQuadratic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\StopWatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\vec3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D7693956-AB18-36E3-AD87-AF183384EDA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5D079FB0-1665-3F89-844C-6338E4D0CE6C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
