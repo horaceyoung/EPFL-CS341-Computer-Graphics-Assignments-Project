@@ -68,7 +68,6 @@ intersect(const Ray&  _ray,
 
 	/* From the valid intersections, select the one that is nearest to the viewer, i.e., with minimum t
 	*/
-	
 	for (size_t i = 0; i < nsol; i++) {
 		if (t[i] > 0) {
 			_intersection_t = std::min(_intersection_t, t[i]);
