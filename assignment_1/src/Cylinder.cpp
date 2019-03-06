@@ -46,23 +46,41 @@ intersect(const Ray&  _ray,
 
 	// A = (d - <d,n> * n)^2
 	double A = dot(_ray.direction - dot(_ray.direction, axis)*axis, _ray.direction - dot(_ray.direction, axis)*axis);
-	// B = 2 * (d - <d,n> * n, oc - <oc,n> * n)
-	double B = 2 * dot(_ray.direction - dot(_ray.direction, axis) * axis, oc - dot(oc, axis) * axis);
+	// B = 2 * <d, oc> - 2 * <n, d> * <n, d>
+	double B = 2 * dot(_ray.direction, oc) - 2 * dot(axis, _ray.direction) * dot(axis, _ray.direction);
 	// C = (oc - <oc, n> * n)^2 - r^2
 	double C = dot(oc - dot(oc, axis)*axis, oc - dot(oc, axis)*axis) - radius * radius;
 	
-	std::array<double, 2> t;
+	std::array<double, 2> t = {0, 0};
 	size_t nsol = solveQuadratic(A, B, C, t);
 	_intersection_t = NO_INTERSECTION;
 
-	// Find the closest valid solution (in front of the viewer)
+	/* Select the valid intersections, valid intersections should not have a distance between the intersection point 
+	and the center of the cylinder larger than half of the height of the cylinder.
+	If any intersection point does not satisfy the above condition, simply mark it as 0
+	*/
 	for (size_t i = 0; i < nsol; ++i) {
-		if (t[i] > 0) _intersection_t = std::min(_intersection_t, t[i]);
+		if (!(t[i] >= 0 && dot((_ray(sol[i]) - center), axis) < height / 2
+			&& dot((_ray(sol[i]) - center), axis) > -height / 2)) {
+			t[i] = 0; // mark the invalid entries
+		}
 	}
 
-	if (_intersection_t == NO_INTERSECTION) return false;
+	/* From the valid intersections, select the one that is nearest to the viewer, i.e., with minimum t
+	*/
+	
+	for (size_t i = 0; i < nsol; i++) {
+		if (t[i] > 0) {
+			_intersection_t = std::min(_intersection_t, t[i]);
+		}
+	}
+
+	/*If no intersections satisfy the conditions, return false*/
+	if (_intersection_t = NO_INTERSECTION) return false;
+
+	/*Get the corresponding value from the intersection selected above*/
 	_intersection_point = _ray(_intersection_t);
-	_intersection_normal = (_intersection_point - center) / radius;
+	_intersection_normal = normalize(_ray(t[i]) - center - (dot(_ray.direction, axis)*t[i] + dot(oc, axis)) * axis);
 
 	return true;
 }
