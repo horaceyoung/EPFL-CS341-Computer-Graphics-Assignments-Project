@@ -152,14 +152,16 @@ vec3 Scene::lighting(const vec3& _point, const vec3& _normal, const vec3& _view,
 	// Then for every llight source, add its diffuse and specular contribution;
 	// Discard diffuse and specular contribution if the light source is blocked by another object
 	for (Light light : lights) {
-		Ray shadow_ray = Ray(_point+ 0.5 * _normal, light.position - _point);
+		// Cast a ray from the intersection point to the light source
+		Ray shadow_ray = Ray(_point+ 0.0001 * _normal, light.position - _point); // Offset the original ray a little to avoid self-blocking
 		Object_ptr inter_object;
 		vec3 inter_point, inter_normal;
 		double t;
-		if (intersect(shadow_ray, inter_object, inter_point, inter_normal, t)) {
+		if (intersect(shadow_ray, inter_object, inter_point, inter_normal, t)) { // The info of the intersection point will be stored in the parameters
 			continue;
 		}
 
+		// Superposition the colors
 		vec3 diffuse_color = light.color * _material.diffuse * dot(normalize(_normal), normalize(light.position - _point));
 		vec3 specular_color = light.color * _material.specular
 			* pow(dot(normalize(_view-_point),normalize(mirror(light.position-_point, _normal))),_material.shininess);
