@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\CMakeFiles\2104d2b052f699909bfa564dde9a26d7\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\CMakeFiles\109214779c431da356ed646a5cec77e5\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{03C0A78A-9900-31D0-88B3-2C3A6DDA3FBC}</UniqueIdentifier>
+      <UniqueIdentifier>{03ACD99F-EA8B-3FFF-AE52-6FDFC9DF9AD7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

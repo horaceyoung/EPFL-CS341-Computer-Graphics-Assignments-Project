@@ -45,14 +45,7 @@ intersect(const Ray&  _ray,
     _intersection_t = NO_INTERSECTION;
 
     // Find the closest valid solution (in front of the viewer)
-    for (size_t i = 0; i < nsol; ++i) {
-        if (t[i] > 0) _intersection_t = std::min(_intersection_t, t[i]);
-    }
-
-    if (_intersection_t == NO_INTERSECTION) return false;
-
-    _intersection_point  = _ray(_intersection_t);
-    _intersection_normal = (_intersection_point - center) / radius;
+    
 
     return true;
 }
