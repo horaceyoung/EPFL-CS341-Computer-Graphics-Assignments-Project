@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG
+# Install script for directory: /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/RayTracing")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()

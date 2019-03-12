@@ -1,0 +1,87 @@
+[
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/lib/lodePNG",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -fPIC -Wall -pedantic -ansi -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/lodePNG.dir/lodepng.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/lodepng.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/lodepng.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/debug_aabb.dir/debug_aabb.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/debug_aabb.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/debug_aabb.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/debug_aabb.dir/Cylinder.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Cylinder.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Cylinder.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/debug_aabb.dir/Image.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Image.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Image.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/debug_aabb.dir/Mesh.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Mesh.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Mesh.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/debug_aabb.dir/Plane.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Plane.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Plane.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/debug_aabb.dir/Scene.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Scene.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Scene.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/debug_aabb.dir/Sphere.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Sphere.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Sphere.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/debug_aabb.dir/vec3.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/vec3.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/vec3.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/raytrace.dir/raytrace.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/raytrace.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/raytrace.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/raytrace.dir/Cylinder.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Cylinder.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Cylinder.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/raytrace.dir/Image.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Image.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Image.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/raytrace.dir/Mesh.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Mesh.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Mesh.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/raytrace.dir/Plane.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Plane.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Plane.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/raytrace.dir/Scene.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Scene.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Scene.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/raytrace.dir/Sphere.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Sphere.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/Sphere.cpp"
+},
+{
+  "directory": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src",
+  "command": "/usr/bin/clang++   -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/SYSTEM -I/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/.   -std=c++11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/raytrace.dir/vec3.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/vec3.cpp",
+  "file": "/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/src/vec3.cpp"
+}
+]

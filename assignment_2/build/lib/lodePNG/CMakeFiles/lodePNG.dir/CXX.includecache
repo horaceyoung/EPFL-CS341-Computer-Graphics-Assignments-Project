@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/lodepng.cpp
+lodepng.h
+/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/lodepng.h
+stdio.h
+-
+stdlib.h
+-
+fstream
+-
+
+/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/lodepng.h
+string.h
+-
+vector
+-
+string
+-
+lodepng.h
+/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/lodepng.h
+iostream
+-
+lodepng.h
+/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/lib/lodePNG/lodepng.h
+

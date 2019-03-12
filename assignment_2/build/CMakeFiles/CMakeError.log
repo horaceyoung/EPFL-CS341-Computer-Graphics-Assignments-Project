@@ -1,0 +1,102 @@
+Detecting C OpenMP failed with the following output:
+Change Dir: /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c473b/fast 
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c473b.dir/build.make CMakeFiles/cmTC_c473b.dir/build
+Building C object CMakeFiles/cmTC_c473b.dir/OpenMPTryFlag.c.o
+/usr/bin/clang   -fopenmp=libomp -v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_c473b.dir/OpenMPTryFlag.c.o   -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin18.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+Found CUDA installation: /usr/local/cuda, version 8.0
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[1]: *** [CMakeFiles/cmTC_c473b.dir/OpenMPTryFlag.c.o] Error 1
+make: *** [cmTC_c473b/fast] Error 2
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_78595/fast 
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_78595.dir/build.make CMakeFiles/cmTC_78595.dir/build
+Building C object CMakeFiles/cmTC_78595.dir/OpenMPTryFlag.c.o
+/usr/bin/clang   -fopenmp=libiomp5 -v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_78595.dir/OpenMPTryFlag.c.o   -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin18.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+Found CUDA installation: /usr/local/cuda, version 8.0
+clang: error: unsupported argument 'libiomp5' to option 'fopenmp='
+make[1]: *** [CMakeFiles/cmTC_78595.dir/OpenMPTryFlag.c.o] Error 1
+make: *** [cmTC_78595/fast] Error 2
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d260e/fast 
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_d260e.dir/build.make CMakeFiles/cmTC_d260e.dir/build
+Building C object CMakeFiles/cmTC_d260e.dir/OpenMPTryFlag.c.o
+/usr/bin/clang   -fopenmp -v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_d260e.dir/OpenMPTryFlag.c.o   -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin18.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+Found CUDA installation: /usr/local/cuda, version 8.0
+clang: error: unsupported option '-fopenmp'
+make[1]: *** [CMakeFiles/cmTC_d260e.dir/OpenMPTryFlag.c.o] Error 1
+make: *** [cmTC_d260e/fast] Error 2
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_63c7b/fast 
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_63c7b.dir/build.make CMakeFiles/cmTC_63c7b.dir/build
+Building CXX object CMakeFiles/cmTC_63c7b.dir/OpenMPTryFlag.cpp.o
+/usr/bin/clang++    -fopenmp=libomp -v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_63c7b.dir/OpenMPTryFlag.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin18.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+Found CUDA installation: /usr/local/cuda, version 8.0
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[1]: *** [CMakeFiles/cmTC_63c7b.dir/OpenMPTryFlag.cpp.o] Error 1
+make: *** [cmTC_63c7b/fast] Error 2
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7d38/fast 
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a7d38.dir/build.make CMakeFiles/cmTC_a7d38.dir/build
+Building CXX object CMakeFiles/cmTC_a7d38.dir/OpenMPTryFlag.cpp.o
+/usr/bin/clang++    -fopenmp=libiomp5 -v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_a7d38.dir/OpenMPTryFlag.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin18.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+Found CUDA installation: /usr/local/cuda, version 8.0
+clang: error: unsupported argument 'libiomp5' to option 'fopenmp='
+make[1]: *** [CMakeFiles/cmTC_a7d38.dir/OpenMPTryFlag.cpp.o] Error 1
+make: *** [cmTC_a7d38/fast] Error 2
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_200e4/fast 
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_200e4.dir/build.make CMakeFiles/cmTC_200e4.dir/build
+Building CXX object CMakeFiles/cmTC_200e4.dir/OpenMPTryFlag.cpp.o
+/usr/bin/clang++    -fopenmp -v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_200e4.dir/OpenMPTryFlag.cpp.o -c /Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin18.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+Found CUDA installation: /usr/local/cuda, version 8.0
+clang: error: unsupported option '-fopenmp'
+make[1]: *** [CMakeFiles/cmTC_200e4.dir/OpenMPTryFlag.cpp.o] Error 1
+make: *** [cmTC_200e4/fast] Error 2
+
+

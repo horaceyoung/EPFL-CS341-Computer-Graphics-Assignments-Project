@@ -103,6 +103,20 @@ vec3 Scene::trace(const Ray& _ray, int _depth)
      * - check whether your recursive algorithm reflects the ray `max_depth` times
      */
 
+    double offset_value = 1e-5;
+    vec3 offset_point = point + offset_value * normal;
+
+    double reflection_rate = object->material.mirror;
+   	if (reflection_rate < 1e-4)
+   		return color;	
+
+    vec3 reflectedDirection = normalize(-mirror(_ray.direction,normal));
+    Ray reflectedRay(offset_point,reflectedDirection);
+	vec3 reflectedColor = trace(reflectedRay,_depth+1);
+	
+	color = (1 - reflection_rate) * color + reflection_rate * reflectedColor;
+
+
     return color;
 }
 
@@ -144,30 +158,38 @@ vec3 Scene::lighting(const vec3& _point, const vec3& _normal, const vec3& _view,
      * the existing vector functions in vec3.h e.g. mirror, reflect, norm, dot, normalize
      */
 
+    //ambient
+    vec3 color = ambience * _material.ambient;
+
+    //diffuse & specular
+    Object_ptr o;
+    vec3 p, n;
+    double t;
+
+    double offset_value = 1e-5;
+    vec3 offset_point = _point + offset_value * _normal;
+
+    for(Light light : lights) {
+        
+        Ray r(light.position, offset_point - light.position);
+    	double ray_length = norm(offset_point - light.position);
+    	if (intersect(r, o, p, n, t)) {
+    		if (t > 0 && t < ray_length)
+    			continue;
+    	} //if shadow, continue
+
+        if(dot(normalize(_normal), normalize(light.position-_point))>=0){
+    	vec3 diffuse_color = light.color * _material.diffuse * dot(normalize(_normal), normalize(light.position-_point));
+        vec3 specular_color = light.color * _material.specular * pow(dot(normalize(mirror(light.position-_point, _normal)),_view),_material.shininess);
+    	
+        color+=(diffuse_color+specular_color);
+        }
+    }
+
+
+
     // visualize the normal as a RGB color for now.
-
-	// Ambient Contribution
-	vec3 color = ambience * _material.ambient;
-	
-	// Then for every llight source, add its diffuse and specular contribution;
-	// Discard diffuse and specular contribution if the light source is blocked by another object
-	for (Light light : lights) {
-		// Cast a ray from the intersection point to the light source
-		Ray shadow_ray = Ray(_point+ 0.0001 * _normal, light.position - _point); // Offset the original ray a little to avoid self-blocking
-		Object_ptr inter_object;
-		vec3 inter_point, inter_normal;
-		double t;
-		if (intersect(shadow_ray, inter_object, inter_point, inter_normal, t)) { // The info of the intersection point will be stored in the parameters
-			continue;
-		}
-
-		// Superposition the colors
-		vec3 diffuse_color = light.color * _material.diffuse * dot(normalize(_normal), normalize(light.position - _point));
-		vec3 specular_color = light.color * _material.specular
-			* pow(dot(normalize(_view-_point),normalize(mirror(light.position-_point, _normal))),_material.shininess);
-		color = color + diffuse_color + specular_color;
-	}
-	
+    //vec3 color = (_normal + vec3(1)) / 2.0;
 
     return color;
 }
