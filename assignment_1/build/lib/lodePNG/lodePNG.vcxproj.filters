@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\lodepng.cpp">
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\lodepng.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\lodepng.h">
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\lodepng.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{D7693956-AB18-36E3-AD87-AF183384EDA2}</UniqueIdentifier>
+      <UniqueIdentifier>{8530810C-6016-3DDE-8D9B-488F49E6AEE6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{5D079FB0-1665-3F89-844C-6338E4D0CE6C}</UniqueIdentifier>
+      <UniqueIdentifier>{C24B8618-1EB5-3D0A-B9DB-D0CD455D9A36}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

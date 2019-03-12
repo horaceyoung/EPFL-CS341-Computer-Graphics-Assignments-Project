@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{97CF5494-A699-3A34-BAD9-13C4C140397A}</ProjectGuid>
+    <ProjectGuid>{B5C6AC83-CFAA-32B6-B822-300B77CD6270}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -56,25 +56,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">raytrace.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">raytrace</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">raytrace.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">raytrace</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">raytrace.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">raytrace</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">raytrace.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">raytrace</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -83,7 +83,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -103,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -119,8 +119,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/Debug/raytrace.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/Debug/raytrace.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/Debug/raytrace.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/Debug/raytrace.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
@@ -149,10 +149,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -165,8 +165,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/Release/raytrace.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/Release/raytrace.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/Release/raytrace.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/Release/raytrace.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -175,7 +175,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
@@ -195,10 +195,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -211,8 +211,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/MinSizeRel/raytrace.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/MinSizeRel/raytrace.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/MinSizeRel/raytrace.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/MinSizeRel/raytrace.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -221,7 +221,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -240,10 +240,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\SYSTEM;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\lib\lodePNG\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -256,8 +256,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/RelWithDebInfo/raytrace.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/RelWithDebInfo/raytrace.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/RelWithDebInfo/raytrace.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/RelWithDebInfo/raytrace.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -265,10 +265,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/src/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1" "-BC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build" --check-stamp-file "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/src/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1" "-BC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build" --check-stamp-file "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/src/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -276,12 +276,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/src/CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/src/CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1" "-BC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build" --check-stamp-file "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/src/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1" "-BC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build" --check-stamp-file "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/src/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -289,12 +289,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/src/CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/src/CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1" "-BC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build" --check-stamp-file "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/src/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1" "-BC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build" --check-stamp-file "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/src/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -302,12 +302,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/src/CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/src/CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1" "-BC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build" --check-stamp-file "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/build/src/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1" "-BC:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build" --check-stamp-file "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/build/src/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -315,44 +315,44 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/Assignment/assignment_1/src/CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_1/src/CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt;C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\raytrace.cpp" />
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Cylinder.cpp" />
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Image.cpp" />
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Mesh.cpp" />
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Plane.cpp" />
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Scene.cpp" />
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Sphere.cpp" />
-    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\vec3.cpp" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Camera.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Cylinder.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Image.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Light.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Material.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Mesh.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Object.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Plane.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Ray.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Scene.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\SolveQuadratic.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\Sphere.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\StopWatch.h" />
-    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\src\vec3.h" />
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\raytrace.cpp" />
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Cylinder.cpp" />
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Image.cpp" />
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Mesh.cpp" />
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Plane.cpp" />
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Scene.cpp" />
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Sphere.cpp" />
+    <ClCompile Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\vec3.cpp" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Camera.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Cylinder.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Image.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Light.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Material.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Mesh.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Object.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Plane.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Ray.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Scene.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\SolveQuadratic.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\Sphere.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\StopWatch.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\src\vec3.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\ZERO_CHECK.vcxproj">
-      <Project>{03393D7A-CB0C-325D-BD59-E131048B71E9}</Project>
+    <ProjectReference Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\ZERO_CHECK.vcxproj">
+      <Project>{4417C3C7-DBE5-3D3D-9ADD-E2B734A2EB4A}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\Assignment\assignment_1\build\lib\lodePNG\lodePNG.vcxproj">
-      <Project>{5701570E-7C46-3F0E-9408-33D7D947D442}</Project>
+    <ProjectReference Include="C:\Users\User\Desktop\Y2 S2 Course Files - EPFL Exchange\CS-341 Introduction to Computer Graphics\EPFL-CS341-Computer-Graphics-Assignments-Project\assignment_1\build\lib\lodePNG\lodePNG.vcxproj">
+      <Project>{C4454E90-F6DD-39A1-8B9E-1EE84D3373C4}</Project>
       <Name>lodePNG</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
