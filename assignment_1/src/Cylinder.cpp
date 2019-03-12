@@ -12,6 +12,7 @@
 
 #include "Cylinder.h"
 #include "SolveQuadratic.h"
+#include "Plane.h"
 
 #include <array>
 #include <cmath>
@@ -33,53 +34,64 @@ intersect(const Ray&  _ray,
      * - store normal at _intersection_point in `_intersection_normal`.
      * - return whether there is an intersection with t > 0
     */
-	
-	/*  Infinite cylinder along y of radius r axis has equation x^2 + z^2 -r^2 = 0
-		The equation for a more general cylinder of radius r oriented along a line c + n*t 
-		where c is the center the one surface sphere and n is the surface normal has following:
-		(x-c-<n,x-c>*n)^2 - r^2 = 0 where x is a point on the cylinder
-		To find the intersection points with a ray o + t*d substitute x = o + t*d and solve:
-		(o+t*d-c-<n,o+t*d-c>*n)^2 - r^2 = 0
-		reduces to A*t^2 B*t + C = 0 with following:
-	*/
-	const vec3 oc = _ray.origin - center;
 
-	// A = (d - <d,n> * n)^2
-	double A = dot(_ray.direction - dot(_ray.direction, axis)*axis, _ray.direction - dot(_ray.direction, axis)*axis);
-	// B = 2 * <d, oc> - 2 * <n, d> * <n, d>
-	double B = 2 * dot(_ray.direction, oc) - 2 * dot(axis, _ray.direction) * dot(axis, _ray.direction);
-	// C = (oc - <oc, n> * n)^2 - r^2
-	double C = dot(oc - dot(oc, axis)*axis, oc - dot(oc, axis)*axis) - radius * radius;
+    //default init arrays
+    //cuz it's floating points operation, there may be duplicate values t (with slightly difference caused by error) between plane and side, so we use size of 4 instead of 2.
+    std::array	<double	, 4> intersect_t_arr;
+    std::array	<vec3	, 4> intersect_point_arr;
+    std::array	<vec3	, 4> intersection_normal_arr;
+   
+    //(d.d - (d.a)^2)t^2 + 2[d.(o-c)-(d.a)((o-c).a)]t + (o-c)^2 - ((o-c).a)^2 - radius^2 = 0
+    vec3 o_c = _ray.origin - center;
 	
-	std::array<double, 2> t = {0, 0};
-	size_t nsol = solveQuadratic(A, B, C, t);
-	_intersection_t = NO_INTERSECTION;
+	//(d.d - (d.a)^2)
+    double A = dot(_ray.direction,_ray.direction) - dot(axis,_ray.direction) * dot(axis,_ray.direction);
+    //2[d.(o-c)-(d.a)((o-c).a)]
+    double B = 2 * ( dot(_ray.direction,o_c) - dot(_ray.direction,axis) * dot(o_c,axis) );
+    //(o-c)^2 - ((o-c).a)^2 - radius^2
+    double C = dot(o_c,o_c) - dot(o_c,axis) * dot(o_c,axis) - radius * radius;
 
-	/* Select the valid intersections, valid intersections should not have a distance between the intersection point 
-	and the center of the cylinder larger than half of the height of the cylinder.
-	If any intersection point does not satisfy the above condition, simply mark it as 0
-	*/
-	for (size_t i = 0; i < nsol; ++i) {
-		if (!(t[i] >= 0 && dot((_ray(sol[i]) - center), axis) < height / 2
-			&& dot((_ray(sol[i]) - center), axis) > -height / 2)) {
-			t[i] = 0; // mark the invalid entries
+    std::array<double, 2> sol = {0,0};
+    size_t sol_num = solveQuadratic(A,B,C,sol);
+    int intersect_num = 0;
+    
+    for (int i = 0; i < sol_num; i++) {
+		if (sol[i] >= 0 
+			&& dot((_ray(sol[i]) - center), axis) < height/2 
+			&& dot((_ray(sol[i]) - center), axis) > -height/2) {
+			intersect_t_arr[intersect_num] = sol[i];
+			intersect_point_arr[intersect_num] = _ray(sol[i]);
+			intersection_normal_arr[intersect_num] 
+				= normalize(_ray(sol[i]) - center - (dot(_ray.direction,axis)*sol[i]+dot(o_c,axis)) * axis);
+			if (dot(_ray.direction,intersection_normal_arr[intersect_num]) > 0)
+				intersection_normal_arr[intersect_num] = -intersection_normal_arr[intersect_num];
+			intersect_num++;
 		}
 	}
+	
+//	if (sol_num == 2) {
+//		if (sol[0] > 0 && sol[1] > 0) {
+//			double minSol = (sol[0]<sol[1])?sol[0]:sol[1];
+//			double maxSol = (sol[0]>sol[1])?sol[0]:sol[1];
+//			
+//			if ((dot((_ray(minSol) - center), axis) > height/2 || dot((_ray(minSol) - center), axis) < -height/2) 
+//			 && (dot((_ray(maxSol) - center), axis) < height/2 || dot((_ray(maxSol) - center), axis) > -height/2)) {
+//				 intersection_normal_arr[0] = -intersection_normal_arr[0];
+//			}
+//		}
+//	}
+//	
+		
+	if (intersect_num == 0) return false;
 
-	/* From the valid intersections, select the one that is nearest to the viewer, i.e., with minimum t
-	*/
-	for (size_t i = 0; i < nsol; i++) {
-		if (t[i] > 0) {
-			_intersection_t = std::min(_intersection_t, t[i]);
-		}
-	}
+    //final select
+    int index = 0; // argmin
+    double cur_min = intersect_t_arr[0];
+    for (int i = 0; i < intersect_num; i++) 
+        if (intersect_t_arr[i] < cur_min) index = i;
 
-	/*If no intersections satisfy the conditions, return false*/
-	if (_intersection_t = NO_INTERSECTION) return false;
-
-	/*Get the corresponding value from the intersection selected above*/
-	_intersection_point = _ray(_intersection_t);
-	_intersection_normal = normalize(_ray(t[i]) - center - (dot(_ray.direction, axis)*t[i] + dot(oc, axis)) * axis);
-
-	return true;
+    _intersection_t = intersect_t_arr[index];
+    _intersection_normal = intersection_normal_arr[index];
+    _intersection_point = intersect_point_arr[index];
+    return true;
 }
