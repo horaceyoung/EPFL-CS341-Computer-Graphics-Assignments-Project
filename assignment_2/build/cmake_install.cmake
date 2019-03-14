@@ -32,22 +32,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xexamplesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/DESTINATION" TYPE PROGRAM FILES
-    "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/TBB_ROOT-NOTFOUND/bin/intel64/vc12/tbb.dll"
-    "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/TBB_ROOT-NOTFOUND/bin/intel64/vc12/tbbmalloc.dll"
-    "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/RUNTIME"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/DESTINATION" TYPE PROGRAM FILES
-    "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/TBB_ROOT-NOTFOUND/bin/intel64/vc12/tbb.dll"
-    "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/TBB_ROOT-NOTFOUND/bin/intel64/vc12/tbbmalloc.dll"
-    "C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/RUNTIME"
-    )
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/lib/lodePNG/cmake_install.cmake")

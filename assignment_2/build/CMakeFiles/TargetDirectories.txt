@@ -1,9 +1,5 @@
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/rebuild_cache.dir
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/edit_cache.dir
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/lib/lodePNG/CMakeFiles/rebuild_cache.dir
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/lib/lodePNG/CMakeFiles/edit_cache.dir
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/lib/lodePNG/CMakeFiles/lodePNG.dir
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src/CMakeFiles/rebuild_cache.dir
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src/CMakeFiles/edit_cache.dir
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src/CMakeFiles/debug_aabb.dir
-/Users/ZhangYuehan/Desktop/CS-341/Assignments/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src/CMakeFiles/raytrace.dir
+C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/lib/lodePNG/CMakeFiles/lodePNG.dir
+C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src/CMakeFiles/raytrace.dir
+C:/Users/User/Desktop/Y2 S2 Course Files - EPFL Exchange/CS-341 Introduction to Computer Graphics/EPFL-CS341-Computer-Graphics-Assignments-Project/assignment_2/build/src/CMakeFiles/debug_aabb.dir
