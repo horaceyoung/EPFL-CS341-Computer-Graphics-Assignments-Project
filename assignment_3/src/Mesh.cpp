@@ -151,6 +151,23 @@ void Mesh::compute_normals()
      * - Store the vertex normals in the Vertex::normal member variable.
      * - Weigh the normals by their triangles' angles.
      */
+
+	//Traverse through all the triangles, compute corresponding weights and add the weighted normal to each vertex respectively
+	for (Triangle& t: triangles_) {
+		double w0, w1, w2;
+		const vec3 p0 = vertices_[t.i0].position;
+		const vec3 p1 = vertices_[t.i1].position;
+		const vec3 p2 = vertices_[t.i2].position;
+		angleWeights(p0, p1, p2, w0, w1, w2);
+		vertices_[t.i0].normal += w0 * t.normal;
+		vertices_[t.i1].normal += w1 * t.normal;
+		vertices_[t.i2].normal += w2 * t.normal;
+	}
+
+	//Traverse all the vertices, normalize the normal
+	for (Vertex& v : vertices_) {
+		v.normal = normalize(v.normal);
+	}
 }
 
 
@@ -259,6 +276,20 @@ intersect_triangle(const Triangle&  _triangle,
     * Refer to [Cramer's Rule](https://en.wikipedia.org/wiki/Cramer%27s_rule) to easily solve it.
      */
 
+
+	/*  Drivation
+		ray.origin + t*ray.dir = a*p0 + b*p1 + (1-a-b)*p2 ->
+	 	ray.origin + t*ray.dir = a*p0 + b*p1 +p2 - a*p2 - b*p2 ->
+		ray.origin + t*ray.dir = a*(p0-p2) + b*(p1-p2) + p2 ->
+		a*(p2-p0) + b*(p2-p1) + ray.dir*t = p2 - ray.origin ->
+								|a|
+		[p2-p0 p2-p1 ray.dir] * |b| = [p2 - ray.origin] ->
+								|t|
+
+		|xp2-xp0 xp2-xp1 d|   |a|   |xp2 - xo|
+		|yp2-yp0 yp2-yp1 d| * |b| = |yp2 - yo|
+		|zp2-zp0 zp2-zp1 d|	  |t|	|zp2 - zo| A solvable linear system
+	*/
     return false;
 }
 
