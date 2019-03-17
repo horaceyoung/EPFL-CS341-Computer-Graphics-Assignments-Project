@@ -189,6 +189,19 @@ void Mesh::compute_bounding_box()
 
 //-----------------------------------------------------------------------------
 
+bool intersect_box_face(const vec3& min_p, const vec3& max_p, const Ray& _ray, int axis) {
+	double t = (min_p[axis] - _ray.origin[axis]) / _ray.direction[axis];
+	if (t < 0)
+		return false;
+	vec3 p = _ray(t);
+	double err = 1e-4;
+	for (int i = 0; i < 3; i++)
+		if (i != axis)
+			if (p[i] < min_p[i] - err || p[i] > max_p[i] + err)
+				return false;
+	return true;
+
+}
 
 bool Mesh::intersect_bounding_box(const Ray& _ray) const
 {
@@ -202,7 +215,17 @@ bool Mesh::intersect_bounding_box(const Ray& _ray) const
     * with all triangles of every mesh in the scene. The bounding boxes are computed
     * in `Mesh::compute_bounding_box()`.
     */
-
+	vec3 move_max;
+	vec3 move_min;
+	for (int axis = 0; axis < 3; axis++) {
+		move_max = bb_max_;
+		move_max[axis] = bb_min_[axis];
+		move_min = bb_min_;
+		move_min[axis] = bb_max_[axis];
+		if (intersect_box_face(move_min, bb_max_, _ray, axis) || intersect_box_face(bb_min_, move_max, _ray, axis))
+			return true;
+	}
+	return false;
     return true;
 }
 
@@ -246,6 +269,12 @@ bool Mesh::intersect(const Ray& _ray,
     return (_intersection_t != NO_INTERSECTION);
 }
 
+//-----------------------------------------------------------------------------
+
+double Mesh::determinant(double a, double b, double c, double d, double e, double f, double g, double h, double i) const
+{
+	return a * (e * i - f * h) - b * (d * i - f * g) + c * (d * h - e * g);
+}
 
 //-----------------------------------------------------------------------------
 
@@ -286,12 +315,45 @@ intersect_triangle(const Triangle&  _triangle,
 		[p2-p0 p2-p1 ray.dir] * |b| = [p2 - ray.origin] ->
 								|t|
 
-		|xp2-xp0 xp2-xp1 d|   |a|   |xp2 - xo|
-		|yp2-yp0 yp2-yp1 d| * |b| = |yp2 - yo|
-		|zp2-zp0 zp2-zp1 d|	  |t|	|zp2 - zo| A solvable linear system
+		|xp2-xp0 xp2-xp1 xd|   |a|   |xp2 - xo|
+		|yp2-yp0 yp2-yp1 yd| * |b| = |yp2 - yo|
+		|zp2-zp0 zp2-zp1 zd|   |t| 	 |zp2 - zo| A solvable linear system
 	*/
-    return false;
+
+	//Use Cramer's Rule to solve the above linear system
+	vec3 v0 = vertices_[_triangle.i0].position;
+	vec3 v1 = vertices_[_triangle.i1].position;
+	vec3 v2 = vertices_[_triangle.i2].position;
+	vec3 col1 = v2 - v0;
+	vec3 col2 = v2 - v1;
+	vec3 col3 = _ray.direction;
+	vec3 res = v2 - _ray.origin;
+
+
+	double determinant_original = dot(cross(col1,col2), col3);
+	if (determinant_original < 1e-4 && determinant_original > -1e-4)
+		return false;
+	double alpha = dot(cross(res, col2), col3) / determinant_original;
+	double beta = dot(cross(col1, res), col3) / determinant_original;
+	double t = dot(cross(col1, col2), res) / determinant_original;
+
+	if (alpha<0 || beta <0 || (1-alpha-beta)<0 || t<0)
+		return false;
+	else {
+		_intersection_t = t;
+		_intersection_point = _ray(_intersection_t);
+		if (draw_mode_ == FLAT) {
+			_intersection_normal = normalize(_triangle.normal);
+		}
+		else if (draw_mode_ == PHONG) {
+			_intersection_normal = normalize(alpha * vertices_[_triangle.i0].normal + beta * vertices_[_triangle.i1].normal + (1 - alpha - beta) * vertices_[_triangle.i2].normal);
+		}
+
+		return true;
+	}
 }
+
+
 
 
 //=============================================================================

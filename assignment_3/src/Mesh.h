@@ -97,8 +97,9 @@ public:
                             vec3&            _intersection_normal,
                             double&          _intersection_t) const;
 
-	//compute the determinant a 3X3 matrix
-	double determinant(double a, double b, double c, double d, double e, double f, double g, double h, double i);
+	///compute the determinant a 3X3 matrix
+	double determinant(double a, double b, double c, double d, double e, double f, double g, double h, double i) const;
+
 
 
 private:

@@ -50,7 +50,7 @@ Running the Ray Tracer
 
 The program expects two command line arguments: an input scene (`*.sce`) and an output image (`*.png`). To render the scene with the three spheres, while inside the `build` directory, type:
 
-    ./raytrace ../scenes/spheres/spheres.sce output.png
+    Debug./raytrace ../scenes/spheres/spheres.sce output.png
 
 If you have finished all exercise tasks, use
 
