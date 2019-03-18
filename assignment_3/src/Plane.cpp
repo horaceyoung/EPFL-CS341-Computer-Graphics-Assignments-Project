@@ -35,7 +35,7 @@ intersect(const Ray& _ray,
           vec3&      _intersection_normal,
           double&    _intersection_t ) const
 {
-    // \todo Copy your assignment 1 solution here.
+    //todo Copy your assignment 1 solution here.
 	double dot_no = dot((center - _ray.origin), normal);
 	double dot_nd = dot(normal, _ray.direction);
 
