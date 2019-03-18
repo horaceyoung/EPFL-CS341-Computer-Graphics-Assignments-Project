@@ -151,6 +151,23 @@ void Mesh::compute_normals()
      * - Store the vertex normals in the Vertex::normal member variable.
      * - Weigh the normals by their triangles' angles.
      */
+
+    for (Triangle& t: triangles_)
+    {
+        const vec3& p0 = vertices_[t.i0].position;
+        const vec3& p1 = vertices_[t.i1].position;
+        const vec3& p2 = vertices_[t.i2].position;
+        
+        double w0, w1, w2;
+        angleWeights(p0,p1,p2,w0,w1,w2);
+
+        vertices_[t.i0].normal += w0 * t.normal;
+        vertices_[t.i1].normal += w1 * t.normal;
+        vertices_[t.i2].normal += w2 * t.normal;
+    }
+
+    for(Vertex& v:vertices_)
+        v.normal=normalize(v.normal);
 }
 
 
@@ -259,7 +276,40 @@ intersect_triangle(const Triangle&  _triangle,
     * Refer to [Cramer's Rule](https://en.wikipedia.org/wiki/Cramer%27s_rule) to easily solve it.
      */
 
-    return false;
+    vec3 v1 = p1 - p0;
+    vec3 v2 = p2 - p0;
+    vec3 v3 = - _ray.direction;
+    vec3 v4 = _ray.origin - p0;
+
+    double det = dot(v1, cross(v2, v3));
+    double det_1 =  dot(v4, cross(v2, v3));
+    double det_2 = dot(v1, cross(v4, v3));
+    double det_3 = dot(v1, cross(v2, v4));
+
+    if(det < 0)         // -1e-4< && <1e-4
+        return false;
+
+    double a = det_1/det;
+    double b = det_2/det;
+    double r = 1-a-b;
+    double t = det_3/det;
+
+     if(t < 0 || a < 0 || b < 0 || r < 0 )
+        return false;
+
+    _intersection_t = t;
+    _intersection_point = _ray(_intersection_t);
+
+    if(draw_mode_ == FLAT)
+        _intersection_normal = normalize(_triangle.normal);
+    else
+        _intersection_normal = normalize(a * vertices_[_triangle.i0].normal + b * vertices_[_triangle.i1].normal 
+                                            + r * vertices_[_triangle.i2].normal);
+    
+    if(dot(_intersection_normal, _ray.direction) < 0) // 1e-2 ?
+        _intersection_normal = - _intersection_normal;
+
+    return true;
 }
 
 
