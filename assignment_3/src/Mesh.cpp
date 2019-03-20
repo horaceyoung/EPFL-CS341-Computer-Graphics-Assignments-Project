@@ -189,18 +189,20 @@ void Mesh::compute_bounding_box()
 
 //-----------------------------------------------------------------------------
 
-bool intersect_box_face(const vec3& min_p, const vec3& max_p, const Ray& _ray, int axis) {
-	double t = (min_p[axis] - _ray.origin[axis]) / _ray.direction[axis];
+bool intersect_bounding_box_faces(const vec3& min, const vec3& max, const Ray& _ray, int axis) {
+	//Then for that particular axis, determine the t value that draws the ray to the same plane as the faces of the bounding box
+	double t = (min[axis] - _ray.origin[axis]) / _ray.direction[axis];
 	if (t < 0)
 		return false;
-	vec3 p = _ray(t);
-	double err = 1e-4;
-	for (int i = 0; i < 3; i++)
+	vec3 r = _ray(t);
+	double error = 1e-4;
+	//Compute the intersection point on the plane, then for each axis, determine if the intersection point falls inside the range of the faces
+	for (int i = 0; i < 3; i++) {
 		if (i != axis)
-			if (p[i] < min_p[i] - err || p[i] > max_p[i] + err)
+			if (r[i] < min[i] - error || r[i] > max[i] + error)
 				return false;
+	}
 	return true;
-
 }
 
 bool Mesh::intersect_bounding_box(const Ray& _ray) const
@@ -215,6 +217,8 @@ bool Mesh::intersect_bounding_box(const Ray& _ray) const
     * with all triangles of every mesh in the scene. The bounding boxes are computed
     * in `Mesh::compute_bounding_box()`.
     */
+	
+	//For each axis (x, y, z), define a moved vec3 move_max and a move_min to move bb_max_, and bb_min_ to the same plane respectively.
 	vec3 move_max;
 	vec3 move_min;
 	for (int axis = 0; axis < 3; axis++) {
@@ -222,11 +226,10 @@ bool Mesh::intersect_bounding_box(const Ray& _ray) const
 		move_max[axis] = bb_min_[axis];
 		move_min = bb_min_;
 		move_min[axis] = bb_max_[axis];
-		if (intersect_box_face(move_min, bb_max_, _ray, axis) || intersect_box_face(bb_min_, move_max, _ray, axis))
+		if (intersect_bounding_box_faces(move_min, bb_max_, _ray, axis) || intersect_bounding_box_faces(bb_min_, move_max, _ray, axis))
 			return true;
 	}
 	return false;
-    return true;
 }
 
 
@@ -348,7 +351,6 @@ intersect_triangle(const Triangle&  _triangle,
 		else if (draw_mode_ == PHONG) {
 			_intersection_normal = normalize(alpha * vertices_[_triangle.i0].normal + beta * vertices_[_triangle.i1].normal + (1 - alpha - beta) * vertices_[_triangle.i2].normal);
 		}
-
 		return true;
 	}
 }
